@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     EditText first, second;
     TextView result;
     Button button;
-    double num1, num2, sum;
+    int num1, num2, sum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +42,14 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                num1 = Double.parseDouble(first.getText().toString());
-                num2 = Double.parseDouble(second.getText().toString());
+                num1 = Integer.parseInt(first.getText().toString());
+                num2 = Integer.parseInt(second.getText().toString());
                 sum = num1 + num2;
-                result.setText(Double.toString(sum));
+                result.setText(Integer.toString(sum));
             }
         });
 
+        button.performClick();
     }
 
     @Override
