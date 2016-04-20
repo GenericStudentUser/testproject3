@@ -23,6 +23,6 @@ public class junit extends ActivityInstrumentationTestCase2<MainActivity>{
         mainActivity = getActivity();
         TextView textView = (TextView)mainActivity.findViewById(R.id.sum);
         String tester = textView.getText().toString();
-        assertEquals("3", tester);
+        assertEquals("1", tester);
     }
 }

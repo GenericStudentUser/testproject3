@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 num1 = Integer.parseInt(first.getText().toString());
                 num2 = Integer.parseInt(second.getText().toString());
-                sum = num1 + num2;
+                sum = num2 - num1;
                 result.setText(Integer.toString(sum));
             }
         });
