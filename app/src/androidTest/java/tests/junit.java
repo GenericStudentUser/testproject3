@@ -17,7 +17,7 @@ public class junit extends ActivityInstrumentationTestCase2<MainActivity>{
         super (MainActivity.class);
     }
 
-    public void firstTest(){
+    public void test_first(){
         mainActivity = getActivity();
         TextView textView = (TextView)mainActivity.findViewById(R.id.sum);
         String tester = textView.getText().toString();
